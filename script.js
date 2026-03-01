@@ -1,6 +1,33 @@
 ﻿const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
 const revealItems = document.querySelectorAll(".reveal");
+const faqItems = document.querySelectorAll(".faq-list details");
+const waitlistForm = document.querySelector("#waitlist-form");
+const formFeedback = document.querySelector("#form-feedback");
+const toast = document.querySelector("#toast");
+
+const logoImg = document.querySelector("#logo-img");
+const logoText = document.querySelector("#logo-text");
+
+function enableLogoFallback() {
+  if (!logoImg || !logoText) return;
+
+  const fallbackSource = logoImg.src.includes("logo-gibor.png")
+    ? "assets/logo-gibor.svg"
+    : "assets/logo-gibor.png";
+  let triedFallbackSource = false;
+
+  logoImg.addEventListener("error", () => {
+    if (!triedFallbackSource) {
+      triedFallbackSource = true;
+      logoImg.src = fallbackSource;
+      return;
+    }
+
+    logoImg.hidden = true;
+    logoText.hidden = false;
+  });
+}
 
 function closeMenu() {
   if (!menu || !menuBtn) return;
@@ -8,9 +35,17 @@ function closeMenu() {
   menuBtn.setAttribute("aria-expanded", "false");
 }
 
-if (menuBtn && menu) {
-  menu.id = "menu-mobile";
+function showToast(message) {
+  if (!toast) return;
+  toast.textContent = message;
+  toast.classList.add("is-visible");
 
+  window.setTimeout(() => {
+    toast.classList.remove("is-visible");
+  }, 2600);
+}
+
+if (menuBtn && menu) {
   menuBtn.addEventListener("click", () => {
     const isOpen = menu.classList.toggle("is-open");
     menuBtn.setAttribute("aria-expanded", String(isOpen));
@@ -35,17 +70,51 @@ if (menuBtn && menu) {
   });
 }
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry, index) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.add("is-visible");
-        }, index * 90);
-      }
+faqItems.forEach((item) => {
+  item.addEventListener("toggle", () => {
+    if (!item.open) return;
+    faqItems.forEach((other) => {
+      if (other !== item) other.open = false;
     });
-  },
-  { threshold: 0.2 }
-);
+  });
+});
 
-revealItems.forEach((item) => observer.observe(item));
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (!prefersReducedMotion && "IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry, index) => {
+        if (!entry.isIntersecting) return;
+
+        window.setTimeout(() => {
+          entry.target.classList.add("is-visible");
+        }, index * 80);
+
+        observer.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  revealItems.forEach((item) => observer.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add("is-visible"));
+}
+
+if (waitlistForm && formFeedback) {
+  waitlistForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    if (!waitlistForm.checkValidity()) {
+      formFeedback.textContent = "Revise os campos obrigatórios antes de enviar.";
+      return;
+    }
+
+    formFeedback.textContent = "Recebido! Vamos te avisar em breve.";
+    showToast("Recebido! Vamos te avisar em breve.");
+    waitlistForm.reset();
+  });
+}
+
+enableLogoFallback();

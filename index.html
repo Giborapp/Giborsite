@@ -3,177 +3,278 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gibor | Treino e saude com confianca</title>
-  <meta name="description" content="Plataforma Gibor para aulas com profissionais verificados e acompanhamento de evolucao.">
+  <title>Gibor | Plataforma de aulas com profissionais verificados</title>
+  <meta name="description" content="O Gibor é uma plataforma marketplace que conecta alunos e profissionais de Educação Física com verificação, transparência e regras claras.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="bg-shape bg-shape--one" aria-hidden="true"></div>
-  <div class="bg-shape bg-shape--two" aria-hidden="true"></div>
+  <header class="header-wrap">
+    <div class="container header" id="inicio">
+      <a class="logo" href="#inicio" aria-label="Voltar ao topo">
+        <img id="logo-img" class="logo-image" src="assets/logo-gibor.png" alt="Gibor" decoding="async">
+        <span id="logo-text" class="logo-text" hidden>GIBOR</span>
+      </a>
 
-  <header class="container header" id="top">
-    <a href="#top" class="logo">GIBOR</a>
-    <nav class="menu" aria-label="Menu principal">
-      <a href="#inicio">Inicio</a>
-      <a href="#aulas">Aulas</a>
-      <a href="#metodo">Metodo</a>
-      <a href="#contato">Contato</a>
-    </nav>
-    <button class="menu-btn" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu">Menu</button>
+      <nav id="menu-mobile" class="menu" aria-label="Menu principal">
+        <a href="#inicio">Início</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#para-alunos">Para alunos</a>
+        <a href="#para-profissionais">Para profissionais</a>
+        <a href="#seguranca">Segurança</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu">Menu</button>
+    </div>
   </header>
 
   <main>
-    <section id="inicio" class="container hero reveal">
-      <div class="hero-content">
-        <p class="tag">Plataforma Gibor</p>
-        <h1>Treino com orientacao seria, humana e verificada.</h1>
+    <section class="container hero reveal">
+      <div>
+        <p class="kicker">Disponível em breve</p>
+        <h1>Gibor: aulas com profissionais verificados, do jeito certo.</h1>
         <p class="hero-text">
-          Conectamos alunos e profissionais com padrao real de qualidade. Menos ruido,
-          mais resultado e acompanhamento consistente em cada etapa.
+          O Gibor é um marketplace que conecta alunos e profissionais de Educação Física em uma experiência clara:
+          perfil completo, verificação profissional, informações objetivas da aula e regras padronizadas.
         </p>
+        <p class="hero-note">Curitiba/PR — fase inicial</p>
         <div class="hero-actions">
-          <a href="#contato" class="btn btn--primary">Agendar avaliacao</a>
-          <a href="#aulas" class="btn btn--ghost">Explorar aulas</a>
-        </div>
-        <div class="stat-row">
-          <div class="stat-item">
-            <strong>+4.2k</strong>
-            <span>alunos ativos</span>
-          </div>
-          <div class="stat-item">
-            <strong>98%</strong>
-            <span>satisfacao media</span>
-          </div>
-          <div class="stat-item">
-            <strong>100%</strong>
-            <span>profissionais verificados</span>
-          </div>
+          <a class="btn btn--primary" href="#contato">Quero ser Profissional Fundador</a>
+          <a class="btn btn--ghost" href="#como-funciona">Ver como funciona</a>
         </div>
       </div>
 
-      <aside class="hero-panel">
-        <p class="panel-label">Aula da semana</p>
-        <h2>Funcional Premium</h2>
-        <p class="panel-text">Treino progressivo com ajustes semanais e foco em consistencia.</p>
-        <div class="tag-row">
-          <span class="mini-tag">Online</span>
-          <span class="mini-tag">50 min</span>
-          <span class="mini-tag">8 vagas</span>
-        </div>
-        <p class="badge">CREF verificado</p>
+      <aside class="hero-card" aria-label="Resumo do Gibor">
+        <p class="badge">Marketplace de aulas</p>
+        <h2>Confiança e transparência para os dois lados</h2>
+        <p>Alunos encontram profissionais com informações claras, e profissionais ganham estrutura para apresentar e gerenciar suas aulas.</p>
       </aside>
     </section>
 
-    <section id="aulas" class="container section reveal">
+    <section class="container section reveal" aria-labelledby="o-que-e-title">
       <div class="section-head">
-        <p class="kicker">Aulas</p>
-        <h2>Escolha o formato ideal para sua rotina</h2>
+        <p class="tag">Sobre o app</p>
+        <h2 id="o-que-e-title">O que é o Gibor</h2>
       </div>
-      <div class="grid">
-        <article class="card card--active">
-          <h3>Funcional Premium</h3>
-          <p class="card-text">Sessao guiada para performance, mobilidade e condicionamento.</p>
-          <div class="tag-row">
-            <span class="mini-tag">Online</span>
-            <span class="mini-tag">50 min</span>
-            <span class="mini-tag">8 vagas</span>
-          </div>
-          <a href="#contato" class="card-link">Quero participar</a>
-        </article>
-
-        <article class="card">
-          <h3>Forca Tecnica</h3>
-          <p class="card-text">Treino presencial com foco em execucao correta e progressao segura.</p>
-          <div class="tag-row">
-            <span class="mini-tag">Presencial</span>
-            <span class="mini-tag">45 min</span>
-            <span class="mini-tag">12 vagas</span>
-          </div>
-          <a href="#contato" class="card-link">Ver disponibilidade</a>
-        </article>
-
-        <article class="card">
-          <h3>Pacote Mensal</h3>
-          <p class="card-text">Plano com aulas, check-ins e orientacao continua para evolucao real.</p>
-          <div class="tag-row">
-            <span class="mini-tag">Mensal</span>
-            <span class="mini-tag">Suporte</span>
-            <span class="mini-tag">Flexivel</span>
-          </div>
-          <a href="#contato" class="card-link">Montar meu plano</a>
-        </article>
-      </div>
+      <ul class="bullet-list">
+        <li>Plataforma que conecta alunos e profissionais de Educação Física.</li>
+        <li>Profissionais com verificação e perfis completos.</li>
+        <li>Aulas organizadas por objetivo, modalidade, local, duração e preço.</li>
+        <li>Transparência de regras e experiência organizada para ambos os lados.</li>
+      </ul>
     </section>
 
-    <section id="metodo" class="container section section--split reveal">
-      <div>
-        <p class="kicker">Metodo Gibor</p>
-        <h2>Organizacao e acompanhamento para voce manter constancia</h2>
+    <section id="como-funciona" class="container section reveal" aria-labelledby="como-funciona-title">
+      <div class="section-head">
+        <p class="tag">Como funciona</p>
+        <h2 id="como-funciona-title">Quatro etapas para começar</h2>
       </div>
-      <div class="steps">
-        <article>
+      <div class="steps-grid">
+        <article class="step-card">
           <span>01</span>
-          <h3>Avaliacao inicial</h3>
-          <p>Mapeamos objetivo, nivel atual e restricoes para iniciar com clareza.</p>
+          <h3>Explore aulas e profissionais</h3>
+          <p>Busque por objetivo, modalidade, local e disponibilidade.</p>
         </article>
-        <article>
+        <article class="step-card">
           <span>02</span>
-          <h3>Plano personalizado</h3>
-          <p>Voce recebe trilha de treino com metas semanais e foco no que importa.</p>
+          <h3>Confira perfil, verificação e avaliações</h3>
+          <p>Veja dados do profissional, incluindo verificação e histórico de feedbacks.</p>
         </article>
-        <article>
+        <article class="step-card">
           <span>03</span>
-          <h3>Revisao e ajuste</h3>
-          <p>Monitoramos progresso e ajustamos carga para melhorar sem sobrecarga.</p>
+          <h3>Agende e confirme</h3>
+          <p>Escolha o horário e confirme com regras apresentadas antes da reserva.</p>
+        </article>
+        <article class="step-card">
+          <span>04</span>
+          <h3>Faça a aula e avalie</h3>
+          <p>Após a aula, registre sua experiência para fortalecer a reputação na plataforma.</p>
         </article>
       </div>
     </section>
 
-    <section class="container section testimonials reveal">
+    <section id="para-alunos" class="container section reveal" aria-labelledby="alunos-title">
       <div class="section-head">
-        <p class="kicker">Resultados</p>
-        <h2>Feedback de quem treinou com a Gibor</h2>
+        <p class="tag">Para alunos</p>
+        <h2 id="alunos-title">Mais clareza para decidir com segurança</h2>
       </div>
-      <div class="testimonial-grid">
-        <blockquote>
-          "Voltei a treinar com seguranca e sem ficar perdido. O acompanhamento fez total diferenca."
-          <cite>Marina, 32</cite>
-        </blockquote>
-        <blockquote>
-          "A plataforma tem cara profissional e o suporte responde rapido. Consigo manter constancia."
-          <cite>Rafael, 28</cite>
-        </blockquote>
+      <div class="cards-grid cards-grid--alunos">
+        <article class="info-card">
+          <h3>Profissionais verificados</h3>
+          <p>Perfis com verificação e informações consistentes.</p>
+        </article>
+        <article class="info-card">
+          <h3>Transparência de informações</h3>
+          <p>Objetivo, modalidade, duração, local e preço em formato objetivo.</p>
+        </article>
+        <article class="info-card">
+          <h3>Agendamento simples</h3>
+          <p>Reserva direta com regras apresentadas no momento da confirmação.</p>
+        </article>
+        <article class="info-card">
+          <h3>Suporte e histórico</h3>
+          <p>Acompanhamento das aulas e contexto organizado da sua jornada.</p>
+        </article>
       </div>
+      <p class="micro-cta">Quer testar quando abrir? <a href="#contato">Entrar na lista de espera</a>.</p>
+    </section>
+
+    <section id="para-profissionais" class="container section reveal" aria-labelledby="profissionais-title">
+      <div class="section-head">
+        <p class="tag">Para profissionais</p>
+        <h2 id="profissionais-title">Estrutura para vender aula com contexto e confiança</h2>
+      </div>
+      <div class="cards-grid cards-grid--pro">
+        <article class="info-card">
+          <h3>Vitrine organizada</h3>
+          <p>Cadastre aulas como produtos com descrição objetiva e regras claras.</p>
+        </article>
+        <article class="info-card">
+          <h3>Menos dependência de algoritmo</h3>
+          <p>Conquiste alunos por perfil, avaliação e consistência de oferta.</p>
+        </article>
+        <article class="info-card">
+          <h3>Agenda e reservas</h3>
+          <p>Organize disponibilidade e confirmação de aulas em um fluxo único.</p>
+        </article>
+        <article class="info-card">
+          <h3>Reputação por avaliações</h3>
+          <p>Histórico de experiência para fortalecer credibilidade profissional.</p>
+        </article>
+      </div>
+      <article class="founder-card">
+        <h3>Profissionais Fundadores</h3>
+        <p>Estamos abrindo uma primeira turma em Curitiba para profissionais fundadores com condições especiais no início do projeto.</p>
+        <a class="btn btn--primary" href="#contato">Quero entrar como Fundador</a>
+      </article>
+    </section>
+
+    <section id="seguranca" class="container section reveal" aria-labelledby="seguranca-title">
+      <div class="section-head">
+        <p class="tag">Segurança</p>
+        <h2 id="seguranca-title">Base da experiência Gibor</h2>
+      </div>
+      <div class="trust-grid">
+        <article class="trust-item">
+          <h3>Verificação profissional</h3>
+          <p>Validação de informações profissionais, incluindo CREF quando aplicável.</p>
+        </article>
+        <article class="trust-item">
+          <h3>Perfil consistente</h3>
+          <p>Informações relevantes da atuação organizadas em formato padrão.</p>
+        </article>
+        <article class="trust-item">
+          <h3>Avaliações e histórico</h3>
+          <p>Registro de experiências para decisões mais seguras na contratação.</p>
+        </article>
+        <article class="trust-item">
+          <h3>Regras claras</h3>
+          <p>Condições de agendamento, cancelamento e comunicação visíveis.</p>
+        </article>
+      </div>
+      <p class="legal-note">O Gibor é uma plataforma de intermediação; a execução da aula e condutas profissionais são de responsabilidade do profissional.</p>
+    </section>
+
+    <section id="faq" class="container section reveal" aria-labelledby="faq-title">
+      <div class="section-head">
+        <p class="tag">FAQ</p>
+        <h2 id="faq-title">Perguntas frequentes</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>O que é o Gibor?</summary>
+          <p>O Gibor é uma plataforma marketplace que conecta alunos a profissionais de Educação Física com foco em confiança e transparência.</p>
+        </details>
+        <details>
+          <summary>Quando estará disponível?</summary>
+          <p>O lançamento está em preparação e a fase inicial será em Curitiba/PR. Cadastre-se na lista de espera para receber novidades.</p>
+        </details>
+        <details>
+          <summary>Como funciona a verificação?</summary>
+          <p>Profissionais passam por validação de dados e documentos relevantes para atuação na plataforma, incluindo CREF quando aplicável.</p>
+        </details>
+        <details>
+          <summary>O Gibor é academia?</summary>
+          <p>Não. O Gibor é uma plataforma de conexão e organização de aulas entre alunos e profissionais.</p>
+        </details>
+        <details>
+          <summary>Onde vai funcionar primeiro?</summary>
+          <p>A primeira fase está prevista para Curitiba/PR.</p>
+        </details>
+        <details>
+          <summary>Como ser Profissional Fundador em Curitiba?</summary>
+          <p>Preencha o formulário na seção de contato selecionando o perfil "Profissional" e informe seu interesse na mensagem.</p>
+        </details>
+        <details>
+          <summary>Como entro na lista de espera como aluno?</summary>
+          <p>Preencha nome, email, perfil "Aluno" e cidade no formulário. Você será avisado sobre a abertura.</p>
+        </details>
+        <details>
+          <summary>Como meus dados são tratados (LGPD)?</summary>
+          <p>Os dados são usados para contato e gestão da lista de espera, conforme descrito na Política de Privacidade.</p>
+        </details>
+        <details>
+          <summary>Como falar com a equipe?</summary>
+          <p>Você pode entrar em contato pelo email <a href="mailto:equipegibor@gmail.com">equipegibor@gmail.com</a>.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contato" class="container cta reveal" aria-labelledby="contato-title">
+      <div>
+        <p class="tag">Lista de espera</p>
+        <h2 id="contato-title">Entre na lista de espera do Gibor</h2>
+        <p>Se você é profissional e quer entrar na turma inicial de Curitiba/PR, avise no campo de mensagem.</p>
+
+        <div class="contact-box">
+          <h3>Contato</h3>
+          <p><a href="mailto:equipegibor@gmail.com">equipegibor@gmail.com</a></p>
+        </div>
+      </div>
+
+      <form class="contact-form" id="waitlist-form" novalidate>
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="perfil">Perfil</label>
+        <select id="perfil" name="perfil" required>
+          <option value="">Selecione</option>
+          <option value="Aluno">Aluno</option>
+          <option value="Profissional">Profissional</option>
+        </select>
+
+        <label for="cidade">Cidade</label>
+        <input id="cidade" name="cidade" type="text" placeholder="Curitiba/PR" required>
+
+        <label for="mensagem">Mensagem (opcional)</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Se você é profissional fundador, conte brevemente seu contexto."></textarea>
+
+        <button class="btn btn--primary" type="submit">Entrar na lista de espera</button>
+        <p id="form-feedback" class="form-feedback" role="status" aria-live="polite"></p>
+      </form>
     </section>
   </main>
 
-  <footer id="contato" class="container footer reveal">
-    <div>
-      <p class="kicker">Contato</p>
-      <h2>Comece hoje com um plano que cabe na sua rotina</h2>
-      <p class="footer-copy">Preencha seus dados e o time Gibor retorna com opcoes de horario.</p>
+  <footer class="container footer">
+    <div class="footer-links">
+      <a href="terms.html">Termos de Uso</a>
+      <a href="privacy.html">Política de Privacidade</a>
+      <a href="cancelamento.html">Política de Cancelamento/Reagendamento</a>
+      <a href="#inicio">Voltar ao topo</a>
     </div>
-
-    <form class="contact-form">
-      <label for="nome">Nome</label>
-      <input id="nome" type="text" placeholder="Seu nome">
-
-      <label for="email">Email</label>
-      <input id="email" type="email" placeholder="voce@email.com">
-
-      <label for="objetivo">Objetivo</label>
-      <select id="objetivo">
-        <option>Condicionamento</option>
-        <option>Forca</option>
-        <option>Reabilitacao</option>
-      </select>
-
-      <button type="button" class="btn btn--primary">Solicitar contato</button>
-    </form>
+    <p>CNPJ: 64.895.078/0001-02</p>
+    <p><a href="mailto:equipegibor@gmail.com">equipegibor@gmail.com</a></p>
+    <p class="copyright">© 2026 Gibor. Todos os direitos reservados.</p>
   </footer>
+
+  <div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>
 
   <script src="script.js"></script>
 </body>
