@@ -8,7 +8,6 @@ const toast = document.querySelector("#toast");
 
 const logoImg = document.querySelector("#logo-img");
 const logoText = document.querySelector("#logo-text");
-const heroLogo = document.querySelector("#hero-logo");
 
 function setupLogoFallback(imageEl, textEl) {
   if (!imageEl) return;
@@ -119,4 +118,4 @@ if (waitlistForm && formFeedback) {
 }
 
 setupLogoFallback(logoImg, logoText);
-setupLogoFallback(heroLogo);
+

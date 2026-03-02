@@ -123,30 +123,6 @@ body {
   max-width: 16ch;
 }
 
-.hero-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 14px;
-  padding: 8px 12px;
-  border: 1px solid var(--line-dark);
-  border-radius: 999px;
-  background: rgba(6, 38, 28, 0.38);
-}
-
-.hero-brand-image {
-  height: 28px;
-  width: auto;
-  display: block;
-}
-
-.hero-brand-title {
-  margin: 0;
-  font-family: "Manrope", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-}
-
 .hero-text {
   margin: 0;
   max-width: 60ch;
@@ -717,3 +693,4 @@ summary:focus-visible {
     transform: none;
   }
 }
+
