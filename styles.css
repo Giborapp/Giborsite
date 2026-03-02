@@ -171,6 +171,10 @@ body {
   padding: 6px 11px;
 }
 
+.badge--hero {
+  color: var(--offwhite);
+}
+
 .hero-card,
 .info-card,
 .founder-card,
