@@ -123,6 +123,30 @@ body {
   max-width: 16ch;
 }
 
+.hero-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  padding: 8px 12px;
+  border: 1px solid var(--line-dark);
+  border-radius: 999px;
+  background: rgba(6, 38, 28, 0.38);
+}
+
+.hero-brand-image {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+
+.hero-brand-title {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
 .hero-text {
   margin: 0;
   max-width: 60ch;
@@ -209,9 +233,10 @@ body {
 
 .section-head {
   display: flex;
-  justify-content: space-between;
-  align-items: end;
-  gap: 16px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
   margin-bottom: 14px;
 }
 
@@ -656,8 +681,7 @@ summary:focus-visible {
   }
 
   .section-head {
-    flex-direction: column;
-    align-items: flex-start;
+    gap: 6px;
   }
 
   .steps-grid,

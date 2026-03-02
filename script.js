@@ -8,24 +8,25 @@ const toast = document.querySelector("#toast");
 
 const logoImg = document.querySelector("#logo-img");
 const logoText = document.querySelector("#logo-text");
+const heroLogo = document.querySelector("#hero-logo");
 
-function enableLogoFallback() {
-  if (!logoImg || !logoText) return;
+function setupLogoFallback(imageEl, textEl) {
+  if (!imageEl) return;
 
-  const fallbackSource = logoImg.src.includes("logo-gibor.png")
-    ? "assets/logo-gibor.svg"
-    : "assets/logo-gibor.png";
+  const fallbackSource = imageEl.src.includes("logo.png")
+    ? "assets/logo-gibor.png"
+    : "assets/logo.png";
   let triedFallbackSource = false;
 
-  logoImg.addEventListener("error", () => {
+  imageEl.addEventListener("error", () => {
     if (!triedFallbackSource) {
       triedFallbackSource = true;
-      logoImg.src = fallbackSource;
+      imageEl.src = fallbackSource;
       return;
     }
 
-    logoImg.hidden = true;
-    logoText.hidden = false;
+    imageEl.hidden = true;
+    if (textEl) textEl.hidden = false;
   });
 }
 
@@ -117,4 +118,5 @@ if (waitlistForm && formFeedback) {
   });
 }
 
-enableLogoFallback();
+setupLogoFallback(logoImg, logoText);
+setupLogoFallback(heroLogo);
