@@ -448,22 +448,24 @@ body {
 .entry-card h3 {
   margin: 0;
   font-family: "Manrope", sans-serif;
-  font-size: 1.08rem;
+  font-size: 1.3rem;
+  line-height: 1.2;
 }
 
 .entry-card p {
   margin: 0;
   color: rgba(244, 238, 223, 0.88);
+  font-size: 1rem;
 }
 
 .entry-tag {
   display: inline-flex;
   width: fit-content;
-  padding: 5px 10px;
+  padding: 7px 12px;
   border-radius: 999px;
   border: 1px solid rgba(216, 160, 58, 0.38);
   color: var(--gold-500);
-  font-size: 0.8rem;
+  font-size: 0.92rem;
   font-weight: 700;
 }
 
@@ -472,8 +474,8 @@ body {
   max-width: 360px;
   text-align: center;
   justify-content: center;
-  padding: 14px 18px;
-  font-size: 0.98rem;
+  padding: 15px 20px;
+  font-size: 1.02rem;
 }
 
 .contact-form label {
