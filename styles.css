@@ -431,17 +431,18 @@ body {
 .contact-actions {
   display: grid;
   align-content: start;
-  gap: 16px;
+  gap: 18px;
 }
 
 .entry-card {
   border: 1px solid var(--line-dark);
   border-radius: var(--radius-md);
   background: rgba(9, 59, 43, 0.46);
-  padding: 18px;
+  padding: 22px;
   display: grid;
-  gap: 12px;
-  justify-items: start;
+  gap: 14px;
+  justify-items: center;
+  text-align: center;
 }
 
 .entry-card h3 {
@@ -468,7 +469,11 @@ body {
 
 .btn--wide {
   width: 100%;
+  max-width: 360px;
   text-align: center;
+  justify-content: center;
+  padding: 14px 18px;
+  font-size: 0.98rem;
 }
 
 .contact-form label {
