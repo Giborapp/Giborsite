@@ -172,7 +172,9 @@ body {
 }
 
 .badge--hero {
-  color: var(--offwhite);
+  background: var(--offwhite);
+  color: var(--green-900);
+  border-color: var(--line-light);
 }
 
 .hero-card,
