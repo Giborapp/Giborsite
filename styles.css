@@ -428,6 +428,17 @@ body {
   gap: 9px;
 }
 
+.contact-actions {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
+
+.btn--wide {
+  width: 100%;
+  text-align: center;
+}
+
 .contact-form label {
   font-size: 0.9rem;
 }

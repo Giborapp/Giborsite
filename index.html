@@ -239,9 +239,9 @@
 
     <section id="contato" class="container cta reveal" aria-labelledby="contato-title">
       <div>
-        <p class="tag">Lista de espera</p>
-        <h2 id="contato-title">Entre na lista de espera do Gibor</h2>
-        <p>Se você é profissional e quer entrar na turma inicial de Curitiba e Região Metropolitana, avise no campo de mensagem.</p>
+        <p class="tag">Pré-cadastro</p>
+        <h2 id="contato-title">Escolha como quer acompanhar o lançamento do Gibor</h2>
+        <p>Se você é profissional, pode entrar na fase inicial como um dos Profissionais Fundadores. Se você é aluno, pode entrar como um dos Pioneiros do Gibor para receber notícias em primeira mão sobre o lançamento.</p>
 
         <div class="contact-box">
           <h3>Contato</h3>
@@ -250,35 +250,11 @@
         </div>
       </div>
 
-      <form class="contact-form" id="waitlist-form" novalidate>
-        <label for="nome">Nome</label>
-        <input id="nome" name="nome" type="text" required>
-
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required>
-
-        <label for="perfil">Perfil</label>
-        <select id="perfil" name="perfil" required>
-          <option value="">Selecione</option>
-          <option value="Aluno">Aluno</option>
-          <option value="Profissional">Profissional</option>
-        </select>
-
-        <label for="cidade">Cidade</label>
-        <input id="cidade" name="cidade" type="text" placeholder="Curitiba e Região Metropolitana" required>
-
-        <label for="mensagem">Mensagem (opcional)</label>
-        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Se você é profissional fundador, conte brevemente seu contexto."></textarea>
-
-        <label class="consent-field" for="aceite-termos">
-          <input id="aceite-termos" name="aceite_termos" type="checkbox" required>
-          <span>Li e concordo com o termo de uso aplicável ao meu perfil, seja o <a href="terms-profissional.html">Termo de Uso do App do Profissional</a> ou o <a href="terms-aluno.html">Termo de Uso do App do Aluno</a>, além da <a href="privacy.html">Política de Privacidade</a>.</span>
-        </label>
-
-        <button class="btn btn--primary" type="submit">Entrar na lista de espera</button>
-        <p class="form-legal-note">Ao enviar, você registra seu consentimento para contato sobre a lista de espera e abertura da plataforma.</p>
-        <p id="form-feedback" class="form-feedback" role="status" aria-live="polite"></p>
-      </form>
+      <div class="contact-actions" aria-label="Opções de pré-cadastro">
+        <a class="btn btn--primary" href="https://docs.google.com/forms/d/e/1FAIpQLScJhlrmAmpPIRPGaT13dpZDOsDDgg8w0NzU_Kj-qR8VKyI9vw/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Quero entrar como Profissional Fundador</a>
+        <a class="btn btn--ghost btn--wide" href="https://docs.google.com/forms/d/e/1FAIpQLScdmKMGvmPZNfXqRqD1uWJD-iesc49xQ7O-gifWohSDbA9gDw/viewform?usp=header" target="_blank" rel="noopener noreferrer">Quero ser um Pioneiro do Gibor</a>
+        <p class="form-legal-note">Ao seguir para o formulário, você poderá se cadastrar para receber novidades em primeira mão e, se quiser, compartilhar observações e sugestões para melhorar a experiência da plataforma.</p>
+      </div>
     </section>
   </main>
 
