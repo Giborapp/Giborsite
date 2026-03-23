@@ -714,6 +714,11 @@ summary:focus-visible {
   margin: 0 0 8px;
 }
 
+.legal-card a {
+  color: var(--green-900);
+  font-weight: 700;
+}
+
 .legal-card ul {
   margin: 0;
   padding-left: 20px;
