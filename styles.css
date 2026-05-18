@@ -432,7 +432,19 @@ body {
 }
 
 .audience-card--accent {
-  background: linear-gradient(180deg, rgba(216, 160, 58, 0.18), rgba(255, 250, 242, 0.98));
+  background:
+    radial-gradient(circle at top right, rgba(216, 160, 58, 0.18), transparent 34%),
+    linear-gradient(180deg, rgba(255, 248, 236, 0.99), rgba(235, 223, 198, 0.98));
+  border-color: rgba(8, 45, 33, 0.14);
+}
+
+.audience-card--accent h3,
+.audience-card--accent .audience-tag {
+  color: var(--ink);
+}
+
+.audience-card--accent .bullet-list--dark li {
+  color: #4f473f;
 }
 
 .audience-tag {
