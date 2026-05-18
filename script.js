@@ -1,9 +1,7 @@
-﻿const menuBtn = document.querySelector(".menu-btn");
+const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
 const revealItems = document.querySelectorAll(".reveal");
 const faqItems = document.querySelectorAll(".faq-list details");
-const waitlistForm = document.querySelector("#waitlist-form");
-const formFeedback = document.querySelector("#form-feedback");
 const toast = document.querySelector("#toast");
 
 const logoImg = document.querySelector("#logo-img");
@@ -102,20 +100,4 @@ if (!prefersReducedMotion && "IntersectionObserver" in window) {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
 
-if (waitlistForm && formFeedback) {
-  waitlistForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    if (!waitlistForm.checkValidity()) {
-      formFeedback.textContent = "Revise os campos obrigatórios antes de enviar.";
-      return;
-    }
-
-    formFeedback.textContent = "Recebido! Vamos te avisar em breve.";
-    showToast("Recebido! Vamos te avisar em breve.");
-    waitlistForm.reset();
-  });
-}
-
 setupLogoFallback(logoImg, logoText);
-
